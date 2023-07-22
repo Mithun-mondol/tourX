@@ -1,0 +1,31 @@
+@import "./abstract/animations";
+@import "./abstract/function";
+@import "./abstract/mixins";
+@import "./abstract/variables";
+
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
+
+@import "./components/";
+
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/navigation";
+
+@import "./pages/aboutUs";
+@import "./pages/blog";
+@import "./pages/blogDetails";
+@import "./pages/blogSidebar";
+@import "./pages/blogStandard";
+@import "./pages/contactUs";
+@import "./pages/destinations";
+@import "./pages/error";
+@import "./pages/faq.scss";
+@import "./pages/gallary";
+@import "./pages/guide";
+@import "./pages/home";
+@import "./pages/pakage";
+@import "./pages/pakageDetails";
+@import "./pages/pakageSidebar";
+@import "./pages/pakageStandard";
