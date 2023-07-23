@@ -1,10 +1,106 @@
 #header {
-    display: flex;
-	&_logo {
-		display: flex;
-		align-items: center;
-	}
-	&_mainNav {
-		display: flex;
+	.navigation {
+		&_logo {
+			height: 100%;
+			display: flex;
+			align-items: center;
+
+			a {
+				img {
+					object-fit: cover;
+				}
+			}
+		}
+		&_mainNav {
+			// background-color: $color-Secondary;
+
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			gap: 4rem;
+
+			&_list {
+				// height: 100%;
+				align-self: stretch;
+
+				display: flex;
+				align-items: center;
+				gap: 2rem;
+
+				&_item {
+					height: 100%;
+					// align-self: stretch;
+
+					display: flex;
+					align-items: center;
+
+					&:hover {
+						a {
+							color: $color-Primary;
+						}
+					}
+
+					a {
+						font-weight: 600;
+						text-transform: capitalize;
+						color: $color-Dark;
+						padding: 3.5rem 0;
+						transition: all 0.4s;
+					}
+				}
+				.hasSubMenu {
+					position: relative;
+
+					&:hover {
+						i {
+							transform: rotate(-180deg);
+						}
+						.subMenu {
+							transform: translateY(0);
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+
+					i {
+						// font-size: 1.6rem;
+						// font-weight: 600;
+						transform: rotate(0);
+						transition: all 0.4s;
+					}
+
+					.subMenu {
+						min-width: 20rem;
+						background-color: $color-Grey-Light;
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 9.4rem;
+						border-top: 3px solid $color-Primary;
+						transform: translateY(2rem);
+						opacity: 0;
+						visibility: hidden;
+						transition: all 0.4s;
+
+						li {
+							border-bottom: 1px solid $color-Grey-Light-1;
+
+							&:hover {
+								a {
+									padding-left: 2rem;
+									color: $color-Primary;
+								}
+							}
+							a {
+								display: block;
+								color: $color-Green;
+								padding: 1.2rem 1.5rem;
+								transition: all 0.4s;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

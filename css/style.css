@@ -32,6 +32,84 @@ a {
   text-decoration: none;
 }
 
+#header .navigation_logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#header .navigation_logo a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#header .navigation_mainNav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4rem;
+}
+#header .navigation_mainNav_list {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+#header .navigation_mainNav_list_item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#header .navigation_mainNav_list_item:hover a {
+  color: #ff7f47;
+}
+#header .navigation_mainNav_list_item a {
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #262339;
+  padding: 3.5rem 0;
+  transition: all 0.4s;
+}
+#header .navigation_mainNav_list .hasSubMenu {
+  position: relative;
+}
+#header .navigation_mainNav_list .hasSubMenu:hover i {
+  transform: rotate(-180deg);
+}
+#header .navigation_mainNav_list .hasSubMenu:hover .subMenu {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+#header .navigation_mainNav_list .hasSubMenu i {
+  transform: rotate(0);
+  transition: all 0.4s;
+}
+#header .navigation_mainNav_list .hasSubMenu .subMenu {
+  min-width: 20rem;
+  background-color: #f3f2f7;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 9.4rem;
+  border-top: 3px solid #ff7f47;
+  transform: translateY(2rem);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+#header .navigation_mainNav_list .hasSubMenu .subMenu li {
+  border-bottom: 1px solid #ddd;
+}
+#header .navigation_mainNav_list .hasSubMenu .subMenu li:hover a {
+  padding-left: 2rem;
+  color: #ff7f47;
+}
+#header .navigation_mainNav_list .hasSubMenu .subMenu li a {
+  display: block;
+  color: #304f47;
+  padding: 1.2rem 1.5rem;
+  transition: all 0.4s;
+}
+
 .topHeader {
   background-color: #304f47;
   padding: 1rem 0;
@@ -87,9 +165,10 @@ a {
 .topHeader_lang select:active, .topHeader_lang select:focus {
   outline: none;
   border: none;
+  border-radius: 0;
 }
 .topHeader_lang select:focus option:checked, .topHeader_lang select:focus option:hover {
-  background-color: rgba(165, 165, 165, 0.5);
+  background-color: #a5a5a5;
 }
 .topHeader_lang select option {
   color: #ff7f47;

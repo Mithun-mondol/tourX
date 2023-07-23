@@ -1,5 +1,5 @@
 .topHeader {
-	background-color: $colorSecondary;
+	background-color: $color-Secondary;
 	padding: 1rem 0;
 	font-size: 1.3rem;
 
@@ -21,7 +21,7 @@
 
 	&_contact {
 		ul {
-			color: $colorWhite;
+			color: $color-White;
 
 			li {
 				font-weight: 600;
@@ -35,7 +35,7 @@
 				}
 
 				a {
-					color: $colorWhite;
+					color: $color-White;
 				}
 			}
 		}
@@ -51,7 +51,7 @@
 			li {
 				a {
 					font-size: 1.4rem;
-					color: $colorPrimary;
+					color: $color-Primary;
 				}
 			}
 		}
@@ -65,7 +65,7 @@
 		select {
 			background-color: transparent;
 			border: none;
-			color: $colorWhite;
+			color: $color-White;
 			font-weight: 700;
 			text-transform: uppercase;
 
@@ -73,24 +73,24 @@
 			&:focus {
 				outline: none;
 				border: none;
-                border-radius: 0;
+				border-radius: 0;
 			}
 
 			&:focus {
 				option {
 					&:checked,
 					&:hover {
-						background-color: rgba($colorGrey);
+						background-color: $color-Grey;
 					}
 				}
 			}
 
 			option {
-				color: $colorPrimary;
+				color: $color-Primary;
 				font-weight: 700;
 
 				&:hover {
-					color: $colorGrey;
+					color: $color-Grey;
 				}
 			}
 		}
