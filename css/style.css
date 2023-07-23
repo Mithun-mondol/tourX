@@ -19,4 +19,82 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #262339;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.topHeader {
+  background-color: #304f47;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+}
+.topHeader_contact, .topHeader_social, .topHeader_lang {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.topHeader_contact ul, .topHeader_social ul {
+  display: flex;
+  align-items: center;
+}
+.topHeader_contact ul {
+  color: #fff;
+}
+.topHeader_contact ul li {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.topHeader_contact ul li:not(:last-child) {
+  margin-right: 4rem;
+}
+.topHeader_contact ul li a {
+  color: #fff;
+}
+.topHeader_social {
+  justify-content: center;
+}
+.topHeader_social ul {
+  justify-content: center;
+  gap: 2rem;
+}
+.topHeader_social ul li a {
+  font-size: 1.4rem;
+  color: #ff7f47;
+}
+.topHeader_lang {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.topHeader_lang select {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.topHeader_lang select:active, .topHeader_lang select:focus {
+  outline: none;
+  border: none;
+}
+.topHeader_lang select:focus option:checked, .topHeader_lang select:focus option:hover {
+  background-color: rgba(165, 165, 165, 0.5);
+}
+.topHeader_lang select option {
+  color: #ff7f47;
+  font-weight: 700;
+}
+.topHeader_lang select option:hover {
+  color: #a5a5a5;
 }/*# sourceMappingURL=style.css.map */

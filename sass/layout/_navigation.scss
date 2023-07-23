@@ -1,0 +1,10 @@
+#header {
+    display: flex;
+	&_logo {
+		display: flex;
+		align-items: center;
+	}
+	&_mainNav {
+		display: flex;
+	}
+}

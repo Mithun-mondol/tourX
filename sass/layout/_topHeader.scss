@@ -1,0 +1,98 @@
+.topHeader {
+	background-color: $colorSecondary;
+	padding: 1rem 0;
+	font-size: 1.3rem;
+
+	&_contact,
+	&_social,
+	&_lang {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	&_contact,
+	&_social {
+		ul {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&_contact {
+		ul {
+			color: $colorWhite;
+
+			li {
+				font-weight: 600;
+
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+
+				&:not(:last-child) {
+					margin-right: 4rem;
+				}
+
+				a {
+					color: $colorWhite;
+				}
+			}
+		}
+	}
+
+	&_social {
+		justify-content: center;
+
+		ul {
+			justify-content: center;
+			gap: 2rem;
+
+			li {
+				a {
+					font-size: 1.4rem;
+					color: $colorPrimary;
+				}
+			}
+		}
+	}
+
+	&_lang {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		select {
+			background-color: transparent;
+			border: none;
+			color: $colorWhite;
+			font-weight: 700;
+			text-transform: uppercase;
+
+			&:active,
+			&:focus {
+				outline: none;
+				border: none;
+                border-radius: 0;
+			}
+
+			&:focus {
+				option {
+					&:checked,
+					&:hover {
+						background-color: rgba($colorGrey);
+					}
+				}
+			}
+
+			option {
+				color: $colorPrimary;
+				font-weight: 700;
+
+				&:hover {
+					color: $colorGrey;
+				}
+			}
+		}
+	}
+}
